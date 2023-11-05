@@ -3,7 +3,6 @@ import Home from './pages/Home';
 import LoginPage from './pages/LoginPage';
 import SignUpPage from './pages/SignUpPage';
 import ServicesPage from './pages/ServicesPage';
-import Footer from './layouts/components/Footer';
 import "./App.css"
 import ContactPage from './pages/Contact';
 
@@ -40,7 +39,6 @@ export default function App() {
       <main>
         <RouterProvider router={router} />
       </main>
-      <Footer />
     </>
   )
 }

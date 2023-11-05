@@ -1,6 +1,6 @@
-import Services from "../features/services/Services"
+import ServicesList from "../features/services/components/ServicesList"
 export default function ServicesPage() {
     return (
-        <Services />
+        <ServicesList />
     )
 }
