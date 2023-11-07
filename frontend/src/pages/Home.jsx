@@ -8,7 +8,6 @@ import icon01 from '../assets/images/icon01.png'
 import icon02 from '../assets/images/icon02.png'
 import icon03 from '../assets/images/icon03.png'
 import About from '../features/about/About'
-import ServicesPage from './ServicesPage'
 import featureImg from '../assets/images/feature-img.png'
 import videoIcon from '../assets/images/video-icon.png'
 import avatarIcon from '../assets/images/avatar-icon.png'
@@ -17,6 +16,7 @@ import faqImg from '../assets/images/faq-img.png'
 import FaqPage from './FaqPage'
 import TestimonialPage from './TestimonialPage'
 import Footer from '../layouts/components/Footer'
+import ServicesList from '../features/services/components/ServicesList'
 
 const doctorDetail = [
   {
@@ -155,7 +155,7 @@ export default function Home() {
             </p>
           </div>
 
-          <ServicesPage />
+          <ServicesList />
         </div>
       </section>
 
