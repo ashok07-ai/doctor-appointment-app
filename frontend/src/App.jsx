@@ -4,7 +4,7 @@ import LoginPage from './pages/auth/LoginPage';
 import SignUpPage from './pages/auth/SignUpPage';
 import ServicesPage from './pages/ServicesPage';
 import "./App.css"
-import ContactPage from './pages/Contact';
+import ContactPage from './pages/ContactPage';
 import DoctorsPage from './pages/doctor/DoctorsPage';
 import DoctorDetailPage from './pages/doctor/DoctorDetailPage';
 
@@ -22,7 +22,7 @@ const router = createBrowserRouter([
     element: (<LoginPage />)
   },
   {
-    path: '/signUp',
+    path: '/register',
     element: (<SignUpPage />)
   },
   {

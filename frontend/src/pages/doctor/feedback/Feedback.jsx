@@ -1,6 +1,6 @@
 import { AiFillStar } from 'react-icons/ai'
-import avatar from '../../assets/images/avatar-icon.png'
-import { formatDate } from '../utils/formatDate'
+import avatar from '../../../assets/images/avatar-icon.png'
+import { formatDate } from '../../utils/formatDate'
 import { useState } from 'react'
 import FeedbackForm from './FeedbackForm'
 
