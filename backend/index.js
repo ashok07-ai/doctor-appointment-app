@@ -2,7 +2,10 @@ import express from "express";
 import cookieParser from "cookie-parser";
 import cors from 'cors';
 import dotenv from 'dotenv';
-import authRoute from "./routes/auth.js"
+import authRoute from "./routes/authRoute.js"
+import userRoute from "./routes/userRoute.js"
+import doctorRoute from "./routes/doctorRoute.js"
+import reviewRoute from "./routes/reviewRoute.js"
 import mongoose from "mongoose";
 
 dotenv.config();
@@ -21,7 +24,13 @@ app.use(cors(corsOptions));
 
 // routes
 // auth routes
-app.use('/api/v1/auth', authRoute)
+app.use('/api/v1/auth', authRoute);
+// users routes
+app.use('/api/v1/users', userRoute);
+// doctor routes
+app.use('/api/v1/doctors', doctorRoute);
+// review routes
+app.use('/api/v1/reviews', reviewRoute);
 
 // database connection
 const connectDB = async () => {
